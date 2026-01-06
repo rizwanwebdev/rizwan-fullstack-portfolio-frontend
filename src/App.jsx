@@ -10,6 +10,7 @@ import ServicesPage from "./pages/ServicesPage";
 import BlogPost from "./pages/BlogPost";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import ThumbnailDownloader from "./tools/ThumbnailDownloader";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/terms" element={<Terms />} />
+      <Route path="/yt" element={<ThumbnailDownloader />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

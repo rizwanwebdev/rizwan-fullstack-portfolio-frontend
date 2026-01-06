@@ -209,7 +209,7 @@ const Blog = () => {
 
         {/* Search*/}
         <section>
-          <div className="px-6 min-w-screen flex justify-center items-center">
+          <div className="px-6 min-w-full flex justify-center items-center">
             <form
               onSubmit={handelSubmit}
               className="relative w-full md:w-[70%] border-2 border-border px-2 py-2 rounded-3xl bg-secondary focus-within:border-primary/50"

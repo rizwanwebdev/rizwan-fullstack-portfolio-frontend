@@ -34,14 +34,8 @@ const Header = () => {
             : "bg-transparent py-5 "
         }`}
       >
-        <div className="container px-6 relative min-w-screen z-10 flex justify-between items-center">
+        <div className="container px-6 relative min-w-full z-10 flex justify-between items-center">
           <Link to="/" className="flex items-center group gap-2">
-            {/* <div
-              className="cursor-pointer w-10 h-10 flex justify-center items-center rounded-xl
-            bg-linear-to-br from-primary/70 to-accent  group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-300"
-            >
-              <Terminal />
-            </div> */}
             <img src={Rlogo} className="h-10" />
             <span className="text-foreground -ml-3 text-3xl font-semibold">
               izwan
@@ -95,7 +89,7 @@ const Header = () => {
                   {link.name}
                 </Link>
               ))}
-              <Link to="contact">
+              <Link to="/contact">
                 <button
                   onClick={() => setIsOpen(false)}
                   className="solid-button  w-full"
@@ -106,7 +100,7 @@ const Header = () => {
             </div>
           </div>
 
-          <Link to="contact" className="hidden lg:block">
+          <Link to="/contact" className="hidden lg:block">
             <button className="solid-button">
               <Code2 className="w-4 h-4 " /> Hire Me
             </button>
